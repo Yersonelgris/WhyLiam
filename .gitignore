@@ -10,7 +10,10 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 6992e553da2448ab5cab15b46826f574856e127a
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -18,11 +21,15 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+<<<<<<< HEAD
 >>>>>>> origin/maps-carlos
+=======
+>>>>>>> 6992e553da2448ab5cab15b46826f574856e127a
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # Recordings can get excessive in size
@@ -34,6 +41,13 @@
 /[Rr]ecordings/
 [Rr]ecordings/
 >>>>>>> origin/maps-carlos
+=======
+[Mm]emoryCaptures/
+
+# Recordings can get excessive in size
+/[Rr]ecordings/
+[Rr]ecordings/
+>>>>>>> 6992e553da2448ab5cab15b46826f574856e127a
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
@@ -85,10 +99,16 @@ crashlytics-build.properties
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+>>>>>>> 6992e553da2448ab5cab15b46826f574856e127a
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
+[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+<<<<<<< HEAD
 =======
 [Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
 
@@ -98,3 +118,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 [Aa]ssets/[Ss]treamingAssets/aa/*
 >>>>>>> origin/maps-carlos
+=======
+[Aa]ssets/[Ss]treamingAssets/aa/*
+>>>>>>> 6992e553da2448ab5cab15b46826f574856e127a
