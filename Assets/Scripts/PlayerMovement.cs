@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        invertControls = SceneManager.GetActiveScene().name == "mirrorScene";
+        invertControls = SceneManager.GetActiveScene().name == "MirrorScene";
     }
 
     void Update()
