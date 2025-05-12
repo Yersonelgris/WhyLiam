@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         // Verifica si la escena actual es "El Mundo Al Revés"
-        invertControls = SceneManager.GetActiveScene().name == "mirrorScene";
+        invertControls = SceneManager.GetActiveScene().name == "RoominvertedC";
     }
 
     void Update()
