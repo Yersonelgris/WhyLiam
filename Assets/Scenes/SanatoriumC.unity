@@ -638,7 +638,6 @@ GameObject:
   - component: {fileID: 515274540}
   - component: {fileID: 515274539}
   - component: {fileID: 515274542}
-  - component: {fileID: 515274543}
   - component: {fileID: 515274544}
   m_Layer: 0
   m_Name: Main Camera
@@ -765,21 +764,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &515274543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515274538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca67809ddeb104d4fbc5b52b91ee6985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 885754332}
-  smoothSpeed: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!82 &515274544
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1711,11 +1695,6 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 853531573}
---- !u!4 &885754332 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 966275948032023265, guid: 18613a6499a4bd1489da455f81a53d4c, type: 3}
-  m_PrefabInstance: {fileID: 6526010632436537024}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &951607935
 GameObject:
   m_ObjectHideFlags: 0
