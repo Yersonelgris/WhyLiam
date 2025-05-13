@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 673026230}
   - component: {fileID: 673026229}
   m_Layer: 0
-  m_Name: Background
+  m_Name: Backgroundy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3075,7 +3075,7 @@ GameObject:
   - component: {fileID: 867610481}
   - component: {fileID: 867610482}
   m_Layer: 0
-  m_Name: Props 3
+  m_Name: Props 3y
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3501,7 +3501,7 @@ GameObject:
   - component: {fileID: 1061774079}
   - component: {fileID: 1061774078}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Gridy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3632,7 +3632,7 @@ GameObject:
   - component: {fileID: 1547128648}
   - component: {fileID: 1547128649}
   m_Layer: 0
-  m_Name: Props
+  m_Name: Propsy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5826,7 +5826,7 @@ GameObject:
   - component: {fileID: 1923499456}
   - component: {fileID: 1923499457}
   m_Layer: 0
-  m_Name: Props 2
+  m_Name: Props 2y
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
