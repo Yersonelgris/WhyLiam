@@ -12,6 +12,7 @@ TagManager:
   - Portal2
   - Portal3
   - Boss
+  - Note2
   layers:
   - Default
   - TransparentFX

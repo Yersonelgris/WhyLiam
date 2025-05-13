@@ -5070,7 +5070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac69dc115b181c45be671d349c07759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2
   patrolPoints:
   - {fileID: 1173461506}
   - {fileID: 1471535746}

@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private GameObject notePanel;
+    [SerializeField] private GameObject notePanel2;
 
     private Vector2 moveInput;
     private Rigidbody2D rb;
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private GameObject mirror;
     private bool noteNearby = false;
+    private bool noteNearby2 = false;
 
     public AudioSource bossSound;
 
@@ -78,6 +80,11 @@ public class PlayerMovement : MonoBehaviour
         {
             notePanel.SetActive(true);
         }
+
+        if (Input.GetButtonDown("Jump") && noteNearby2 && notePanel2 != null)
+        {
+            notePanel2.SetActive(true);
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -122,6 +129,11 @@ public class PlayerMovement : MonoBehaviour
         {
             noteNearby = true;
         }
+
+        if (collision.CompareTag("Note2"))
+        {
+            noteNearby2 = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -132,6 +144,15 @@ public class PlayerMovement : MonoBehaviour
             if (notePanel != null)
             {
                 notePanel.SetActive(false);
+            }
+        }
+
+        if (collision.CompareTag("Note2"))
+        {
+            noteNearby2 = false;
+            if (notePanel2 != null)
+            {
+                notePanel2.SetActive(false);
             }
         }
 
