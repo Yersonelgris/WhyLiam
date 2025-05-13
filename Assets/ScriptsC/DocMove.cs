@@ -6,6 +6,11 @@ public class DocMove : MonoBehaviour
     private Vector2 moveInput;
     private Rigidbody2D docRb; 
     private Animator docAnim;
+    public AudioSource steps;
+    private bool hActivo;
+    private bool vActivo;
+
+
         void Start()
     {
         docRb = GetComponent<Rigidbody2D>();
@@ -22,6 +27,38 @@ public class DocMove : MonoBehaviour
         docAnim.SetFloat("Horizontal",moveX);
         docAnim.SetFloat("Vertical",moveY);
         docAnim.SetFloat("Speed", moveInput.sqrMagnitude);
+
+        if (Input.GetButtonDown("Horizontal"))
+        {
+            hActivo = true;
+            steps.Play();
+        }
+        if (Input.GetButtonDown("Vertical"))
+        {
+            vActivo = true;
+            steps.Play();
+        }
+
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            hActivo = false;
+            if (vActivo == false)
+            {
+                steps.Pause();
+            }
+            
+        }
+        if (Input.GetButtonUp("Vertical"))
+        {
+            vActivo = false;
+             if (hActivo == false)
+            {
+                steps.Pause();
+            }
+        }
+
+
+        
     }
     void FixedUpdate()
     {
