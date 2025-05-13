@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Hollow
+  - Mirror
+  - Portal1
+  - Note
   layers:
   - Default
   - TransparentFX
@@ -56,6 +59,9 @@ TagManager:
     locked: 0
   - name: Interactives
     uniqueID: 2711121921
+    locked: 0
+  - name: Player
+    uniqueID: 1275255435
     locked: 0
   m_RenderingLayers:
   - Default

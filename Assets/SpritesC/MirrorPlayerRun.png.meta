@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 6465e935424bce449a312b6f94a1a4a4
+guid: 901da8ae1b27438468f87984a0200f58
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3598916374439202735
-    second: Notes_0
+      213: 6362201114944351877
+    second: MirrorPlayerRun_0
   - first:
-      213: -733219096263470103
-    second: Notes_1
+      213: -494000212772390132
+    second: MirrorPlayerRun_1
   - first:
-      213: 8722924714100469040
-    second: Notes_2
+      213: 5921489412595451170
+    second: MirrorPlayerRun_2
+  - first:
+      213: -149525834787116712
+    second: MirrorPlayerRun_3
+  - first:
+      213: -2478034641658222272
+    second: MirrorPlayerRun_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -145,13 +151,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Notes_0
+      name: MirrorPlayerRun_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 150f63510a41e0ec0800000000000000
-      internalID: -3598916374439202735
+      spriteID: 58e2ad5a4341b4850800000000000000
+      internalID: 6362201114944351877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Notes_1
+      name: MirrorPlayerRun_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +188,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e3dea0ed1513d5f0800000000000000
-      internalID: -733219096263470103
+      spriteID: c0bfbbe7c65f429f0800000000000000
+      internalID: -494000212772390132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MirrorPlayerRun_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2250df25f3b5d2250800000000000000
+      internalID: 5921489412595451170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MirrorPlayerRun_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85925c4ab07ccedf0800000000000000
+      internalID: -149525834787116712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MirrorPlayerRun_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04969d26f904c9dd0800000000000000
+      internalID: -2478034641658222272
       vertices: []
       indices: 
       edges: []
@@ -192,7 +264,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 452dc15288e74cd4e8b3eb38520acfb8
+    spriteID: 83b0cfc4635016741808f1dadb723812
     internalID: 0
     vertices: []
     indices: 
@@ -202,8 +274,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Notes_0: -3598916374439202735
-      Notes_1: -733219096263470103
+      MirrorPlayerRun_0: 6362201114944351877
+      MirrorPlayerRun_1: -494000212772390132
+      MirrorPlayerRun_2: 5921489412595451170
+      MirrorPlayerRun_3: -149525834787116712
+      MirrorPlayerRun_4: -2478034641658222272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
