@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private GameObject notePanel; // <- Asigna el panel de la nota desde el inspector
+    [SerializeField] private GameObject notePanel;
 
     private Vector2 moveInput;
     private Rigidbody2D rb;
@@ -14,6 +14,10 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private GameObject mirror;
     private bool noteNearby = false;
+
+    public AudioSource bossSound;
+
+    private bool hasTriggeredBoss = false;
 
     void Start()
     {
@@ -35,7 +39,6 @@ public class PlayerMovement : MonoBehaviour
             animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animations/Player");
         }
 
-        // Asegura que el panel esté oculto al inicio
         if (notePanel != null)
         {
             notePanel.SetActive(false);
@@ -66,14 +69,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", animDirection.y);
         animator.SetBool("IsMoving", finalInput != Vector2.zero);
 
-        // Interacción con el espejo
         if (Input.GetButtonDown("Jump") && mirror != null)
         {
             SceneManager.LoadScene("MirrorScene");
-            Debug.Log("Botón presionado y espejo detectado");
         }
 
-        // Interacción con la nota
         if (Input.GetButtonDown("Jump") && noteNearby && notePanel != null)
         {
             notePanel.SetActive(true);
@@ -102,6 +102,22 @@ public class PlayerMovement : MonoBehaviour
             SceneManager.LoadScene("Roominverted");
         }
 
+        if (collision.CompareTag("Portal2"))
+        {
+            SceneManager.LoadScene("RoomC");
+        }
+
+        if (collision.CompareTag("Portal3"))
+        {
+            SceneManager.LoadScene("BossC");
+        }
+
+        if (collision.CompareTag("Boss") && !hasTriggeredBoss)
+        {
+            hasTriggeredBoss = true;
+            LoadBossScene(); // Primero carga la escena
+        }
+
         if (collision.CompareTag("Note"))
         {
             noteNearby = true;
@@ -122,6 +138,28 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("Mirror"))
         {
             mirror = null;
+        }
+    }
+
+    void LoadBossScene()
+    {
+        SceneManager.sceneLoaded += OnBossSceneLoaded;
+        SceneManager.LoadScene("SanatoriumC");
+    }
+
+    private void OnBossSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "SanatoriumC")
+        {
+            // Buscar el AudioSource en la nueva escena
+            AudioSource sceneBossSound = Object.FindFirstObjectByType<AudioSource>();
+            if (sceneBossSound != null)
+            {
+                sceneBossSound.Play();
+            }
+
+            // Limpiar el evento
+            SceneManager.sceneLoaded -= OnBossSceneLoaded;
         }
     }
 }

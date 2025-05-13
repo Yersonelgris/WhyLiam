@@ -8,6 +8,10 @@ TagManager:
   - Mirror
   - Portal1
   - Note
+  - Doc
+  - Portal2
+  - Portal3
+  - Boss
   layers:
   - Default
   - TransparentFX

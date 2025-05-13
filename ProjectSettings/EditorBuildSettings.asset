@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Roominverted.unity
     guid: 2a6db509b78c5de438b0d150b8ec58e3
+  - enabled: 1
+    path: Assets/Scenes/BossC.unity
+    guid: 2e412617bd1599044b866e1e7dfea08f
+  - enabled: 1
+    path: Assets/Scenes/RoomC.unity
+    guid: 0a2b707a44b8083409d1ff27a0e9fe7a
+  - enabled: 1
+    path: Assets/Scenes/SanatoriumC.unity
+    guid: 7ef69d4da180c8e408a38204174f401b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
