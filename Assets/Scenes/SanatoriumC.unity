@@ -1201,7 +1201,7 @@ MonoBehaviour:
     se\xF1or Liam Agnett no est\xE1 primordialmente confinado por barreras f\xEDsicas,
     sino por los mecanismos autorepresivos de su psique. La intervenci\xF3n terap\xE9utica
     debe orientarse a que reconozca la tr\xEDada psicol\xF3gica: carcelero (supery\xF3
-    persecutorio), monstruo (proyecci\xF3n de su culpa) y v\xEDctima (self vulnerable)
+    persecutorio), monstruo (proyecci\xF3n de su culpa) y v\xEDctima (auto vulneraci\xF3n)
     como manifestaciones de un mismo trauma no resuelto."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiImage: {fileID: 1525619024}
   tmpText: {fileID: 0}
-  delay: 38
+  delay: 85
 --- !u!4 &1793837180 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1776371894047997908, guid: b81ce9bf98c2dd242be198a3ae39a953, type: 3}
@@ -1569,7 +1569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1855268062
 RectTransform:
   m_ObjectHideFlags: 0
